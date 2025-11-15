@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="com.demo.service.QuickSort"/>
+    <fullyQualifiedTypeName name="com.demo.service.InsertionSort"/>
+    <fullyQualifiedTypeName name="com.demo.service.MergeSort"/>
+    <fullyQualifiedTypeName name="com.demo.service.CountingSort"/>
+    <fullyQualifiedTypeName name="com.demo.service.InsertionSort1"/>
+    <fullyQualifiedTypeName name="com.demo.service.SelectionSort"/>
+    <fullyQualifiedTypeName name="com.demo.service.HeapSort"/>
+    <fullyQualifiedTypeName name="com.demo.linkedlist.SinglyLinkedlist1"/>
+    <fullyQualifiedTypeName name="com.demo.linkedlist.SinglyLinkedList.Node"/>
+    <fullyQualifiedTypeName name="com.demo.service.HeapSort1"/>
+    <fullyQualifiedTypeName name="com.demo.linkedlist.DoublyLinkedList"/>
+    <fullyQualifiedTypeName name="beans.Employee"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+</qualifiedTypeNameHistroy>

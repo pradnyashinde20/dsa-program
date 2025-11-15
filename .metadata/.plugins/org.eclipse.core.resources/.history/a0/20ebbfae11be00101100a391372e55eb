@@ -1,0 +1,33 @@
+package com.demo.service;
+
+public class MyBinarySearchTree {
+	Node root;
+	class Node{
+		int data;
+		Node left;
+		Node right;
+		
+		public Node(int data) {
+			this.data=data;
+			this.left=null;
+			this.right=null;
+		}
+	}
+	public MyBinarySearchTree(Node root) {
+		this.root = root;
+	}
+   
+	public void insertNode(int key) {
+		root = insertData(root,key);
+	}
+		private Node insertData(Node root, int key) {
+			Node newNode = new Node(key);
+			if(root==null) {
+				root = newNode;
+				return root;
+			}
+			return newNode;
+	}
+	
+
+}

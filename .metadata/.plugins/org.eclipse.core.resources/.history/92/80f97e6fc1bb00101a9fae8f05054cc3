@@ -1,0 +1,90 @@
+package com.demo.linkedlist;
+
+public class CircularDoublyLinkedList {
+	Node head;
+	class Node{
+		int data;
+		Node prev;
+		Node next;
+		public Node(int data)
+		{
+			this.data=data;
+			this.prev=null;
+			this.next=null;
+		}
+	}
+	public void addNewNode(int value)
+	{
+		Node newNode=new Node(value);
+		if(head==null)
+		{
+			head=newNode;
+			head.next=head;
+			head.prev=head;
+			
+		}
+		else {
+			Node temp=head.prev;
+			newNode.next=temp.next;
+			newNode.prev=temp;
+			temp.next=newNode;
+			temp.prev=newNode;	
+		}
+		
+	}
+	
+	public void display()
+	{
+		if(head==null)
+		{
+			System.out.println("list is empty");
+		}
+		else {
+			Node temp=head;
+			do
+			{
+				System.out.print(temp.data+"--------");
+				temp=temp.next;
+			}while(temp!=head);
+		}
+	}
+	
+	public void addByPosition(int val,int pos)
+	{
+		Node newNode=new Node(val);
+		if(pos==1)
+		{
+			Node temp=head;
+			head=newNode;
+			newNode.next=temp.next;
+			newNode.prev=temp;
+			temp.next=newNode;
+			temp.prev=newNode;
+	}
+		else {
+			Node temp=head;
+			int i=0;
+			for(i=0;temp.next!=head&&i<pos-2;i++)
+			{
+				temp=temp.next;
+				
+			}
+			if(i==pos-2)
+			{
+				newNode.next=head;
+				newNode.prev=temp;
+				temp.next=newNode.next;
+				newNode.next.prev=newNode;
+				
+//				newNode.prev=temp;
+//				newNode.next=temp.next;
+//				temp.next=newNode;
+//				newNode.next.prev=newNode;
+			}
+			else {
+				System.out.println(pos+"beyound the limit");
+			}
+		}
+	}
+
+}

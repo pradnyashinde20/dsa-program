@@ -1,0 +1,68 @@
+package TwoDArray;
+
+import java.util.Scanner;
+
+public class TwoDArray {
+	Scanner sc=new Scanner(System.in);
+
+	public void acceptArrayElement(int[][] arr) {
+		// TODO Auto-generated method stub
+	
+		System.out.println("enter the array element:");
+		for(int i=0;i<arr.length;i++)
+		{
+			for(int j=0;j<arr[i].length;j++)
+			{
+				arr[i][j]=sc.nextInt();
+			}
+		}
+	}
+
+	public void displayEle(int [][]arr) {
+		// TODO Auto-generated method stub
+		System.out.println(" array element are :");
+		for(int i=0;i<arr.length;i++)
+		{
+			for(int j=0;j<arr[i].length;j++)
+			{
+				System.out.print(arr[i][j]+"\t");
+			}
+			System.out.println();
+		}
+	}
+
+	public void reverseRowEle(int[][] arr) {
+		// TODO Auto-generated method stub
+		int temp[][]=new int[arr[0].length][];
+
+		for(int i=0;i<arr.length;i++)
+		{
+			for(int j=0;j<arr[0].length-1;j++)
+			{
+			    int first = arr[i][j];
+			    
+				arr[i][j]=arr[i][j+1];
+				arr[i][j+1]=first;
+			}
+			System.out.println();
+		}
+	}
+
+	public void findMaxOddNoRowWise(int[][] arr) {
+		// TODO Auto-generated method stub
+		
+		for(int i=0;i<arr.length;i++)
+		{
+			for(int j=0;j<arr[i].length;j++)
+			{
+				if(arr[i][j]%2!=0)
+				{
+					
+				}
+			}
+		}
+	}
+
+	
+	
+}

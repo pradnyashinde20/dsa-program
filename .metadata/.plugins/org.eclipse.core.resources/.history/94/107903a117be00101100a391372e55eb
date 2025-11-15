@@ -1,0 +1,33 @@
+package com.demo.test;
+
+import com.demo.service.MyBinarySearchTree;
+
+public class TestMyBinarySearchTree {
+
+	public static void main(String[] args) {
+		MyBinarySearchTree tree = new MyBinarySearchTree();
+		tree.insertNode(31);
+		tree.insertNode(15);
+		tree.insertNode(17);
+		tree.insertNode(18);
+		tree.insertNode(10);
+		tree.insertNode(40);
+		tree.insertNode(34);
+		tree.insertNode(45);
+		tree.insertNode(33);
+		
+		tree.inorder();
+		tree.postorder();
+		tree.preorder();
+		
+		tree.search(40);
+		tree.deleteNode(40);
+		tree.inorder();
+		
+		tree.searchNonRecurssive(10);
+		
+		
+
+	}
+
+}

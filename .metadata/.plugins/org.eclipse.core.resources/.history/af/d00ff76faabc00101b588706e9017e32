@@ -1,0 +1,72 @@
+package com.queue.service;
+
+public class CircularQueue {
+	
+	int arr[];
+	int front;
+	int rear;
+	
+	public CircularQueue() {
+		arr=new int[10];
+		this.front = -1;
+		this.rear=-1;
+	}
+	
+	public CircularQueue(int size) {
+		arr=new int[size];
+		this.front = -1;
+		this.rear=-1;
+	}
+	
+  public boolean isEmpty() {
+	  if(front ==-1) {
+		  System.out.println("queue is empty");
+		  return true;
+	  }
+	  return false;
+  }
+  
+  public boolean isFull() {
+	  if(front==0 && rear==arr.length-1) {
+		  System.out.println("queue is empty");
+		  return true;
+	  }
+	  else if(front == rear+1) {
+		  System.out.println("queue is empty");
+		  return true;
+	  }else {
+		  return false;
+	  }
+  }
+  
+  public boolean enqueue(int val) {
+	  if(!isFull()) {
+		  if(front ==-1) {
+			  front =0;
+		  }
+		  rear= (rear+1)%arr.length;
+		  arr[rear]=val;
+		  System.out.println("added successfully"+val);
+		  return true;
+	  }
+	  return false;
+  }
+  
+  public int dequeue() {
+	  if(!isEmpty()) {
+		 int n = arr[front];
+		 if(front == rear) {
+			 front=-1;
+			 rear=-1;
+		 }else {
+			 front = (front+1)%arr.length;
+		 }
+		 System.out.println(n);
+		 return n;
+	  }
+	  System.out.println("queue is empty");
+	  return -1;
+	  
+  }
+
+}

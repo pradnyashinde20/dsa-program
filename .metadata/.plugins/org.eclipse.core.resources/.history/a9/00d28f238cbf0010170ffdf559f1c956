@@ -1,0 +1,19 @@
+package com.demo.test;
+
+import java.util.Arrays;
+
+import com.demo.service.OneDArray;
+
+public class Test1DArray {
+	public static void main(String []args) {
+		OneDArray ob = new OneDArray();
+		int arr[]= {12,23,4,45,56,34,78,2,9};
+		int add = ob.digitAdd(arr);
+		System.out.println("addition of digits "+add);
+		
+		int primeFact []= ob.primeFactorial(arr);
+		System.out.println(Arrays.toString(primeFact));
+		
+	}
+
+}

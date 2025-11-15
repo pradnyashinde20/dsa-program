@@ -1,0 +1,21 @@
+package TwoDArray;
+
+import java.util.Scanner;
+
+public class TestTwoDArray {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner sc=new Scanner(System.in);
+System.out.println("enter the size of array:");
+int size=sc.nextInt();
+int arr[][]=new int[size][size];
+TwoDArray d=new TwoDArray();
+d.acceptArrayElement(arr);
+d.displayEle(arr);
+d.reverseRowEle(arr);
+d.displayEle(arr);
+d.findMaxOddNoRowWise(arr);
+	}
+
+}

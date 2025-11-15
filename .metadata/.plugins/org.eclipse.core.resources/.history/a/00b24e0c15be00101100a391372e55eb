@@ -1,0 +1,13 @@
+package com.demo.test;
+
+import com.demo.service.MyBinarySearchTree;
+
+public class TestMyBinarySearchTree {
+
+	public static void main(String[] args) {
+		MyBinarySearchTree tree = new MyBinarySearchTree();
+		
+
+	}
+
+}

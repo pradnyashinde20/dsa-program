@@ -1,0 +1,8 @@
+package com.stack.test;
+
+public class TestMyStackArray {
+
+	public static void main(String[] args) {
+		 MyStackArray ob = new  MyStackArray(10);
+
+}

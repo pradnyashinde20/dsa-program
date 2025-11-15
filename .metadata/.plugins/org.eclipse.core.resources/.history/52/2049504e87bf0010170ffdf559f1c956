@@ -1,0 +1,14 @@
+package com.demo.test;
+
+import com.demo.service.OneDArray;
+
+public class Test1DArray {
+	public static void main(String []args) {
+		OneDArray ob = new OneDArray();
+		int arr[]= {12,23,4,45,56,34,78,2,90};
+		int add = ob.digitAdd(arr);
+		System.out.println("addition of digits "+add);
+		
+	}
+
+}

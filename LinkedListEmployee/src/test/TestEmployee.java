@@ -1,0 +1,16 @@
+package test;
+
+import beans.Employee;
+import linkedlist.EmployeeSinglyLinkedList;
+
+public class TestEmployee {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 EmployeeSinglyLinkedList li=new  EmployeeSinglyLinkedList();
+		 li.addNewEmployee(new Employee(1,"abc",30000));
+		 
+
+	}
+
+}

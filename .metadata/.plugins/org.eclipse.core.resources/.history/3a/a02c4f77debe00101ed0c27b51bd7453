@@ -1,0 +1,20 @@
+package com.demo.test;
+
+import java.util.Scanner;
+
+import com.demo.list.MyGraph;
+
+public class TestAdjecencyMatrix {
+
+	public static void main(String[] args) {
+	Scanner sc = new Scanner(System.in);
+	System.out.println("how many vertices");
+	int v= sc.nextInt();
+	MyGraph g = new MyGraph(v);
+	
+	storedGraph(g,v);
+	g.printGraph();
+
+	}
+
+}

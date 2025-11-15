@@ -1,0 +1,35 @@
+package TwoDArray;
+
+import java.util.Scanner;
+
+public class TwoDArray {
+	Scanner sc=new Scanner(System.in);
+
+	public void acceptArrayElement(int[][] arr) {
+		// TODO Auto-generated method stub
+	
+		System.out.println("enter the array element:");
+		for(int i=0;i<arr.length;i++)
+		{
+			for(int j=0;j<=arr[0].length;j++)
+			{
+				arr[i][j]=sc.nextInt();
+			}
+		}
+	}
+
+	public void displayEle(int [][]arr) {
+		// TODO Auto-generated method stub
+		System.out.println(" array element are :");
+		for(int i=0;i<arr.length;i++)
+		{
+			for(int j=0;j<=arr[0].length;j++)
+			{
+				System.out.println(arr[i][j]+"\t");
+			}
+		}
+	}
+
+	
+	
+}

@@ -1,0 +1,27 @@
+package com.demo.test;
+
+import com.demo.linkedlist.CircularDoublyLinkedList;
+
+public class TestCircularDoubleLinkedList {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CircularDoublyLinkedList  li=new CircularDoublyLinkedList ();
+		li.addNewNode(12);
+		li.addNewNode(45);
+		li.display();
+		System.out.println("+++---------");
+		li.addByPosition(67, 3);
+		li.display();
+		System.out.println("+++-------------");
+		li.addByPosition(89, 2);
+		li.display();
+		System.out.println("++-------------");
+		li.addByPosition(47, 3);
+		li.display();
+		System.out.println("++-------------");
+		li.addByNum(90,45);
+		li.display();
+	}
+
+}

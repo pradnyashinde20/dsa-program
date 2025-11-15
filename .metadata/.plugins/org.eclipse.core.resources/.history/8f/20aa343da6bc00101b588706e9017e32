@@ -1,0 +1,34 @@
+package com.queue.service;
+
+public class MyQueueList {
+Node front;
+Node rear;
+class Node{
+	int data;
+	Node next;
+	public Node(int data) {
+		this.data = data;
+		this.next = null;
+	}
+}
+
+public MyQueueList() {
+	front = null;
+	rear = null;
+}
+
+public boolean isEmpty() {
+	return front ==null && rear ==null;
+}
+
+public void enqueue(int val) {
+	Node newNode = new Node(val);
+	if(isEmpty()) {
+		front = newNode;
+	}else {
+		rear.next = newNode;
+	}
+	rear = newNode;
+	System.out.println("added num"+val);
+}
+}
